@@ -1,0 +1,237 @@
+@import '../bootstrap/scss/bootstrap.scss';
+
+$link_color : #000;
+$link_opacity : .3;
+$var : 50%;
+$padding-right : 30px;
+$header_height : 70px;
+$space_value : 100px;
+$padding_top : 50px;
+$footer_color : rgb(49, 51, 59);
+
+@mixin center_y(){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+@mixin center_x() {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin center($var) {
+    position: absolute;
+    top:$var;
+    left:$var;
+    transform: translateX(-$tx) translateY(-$ty);
+}
+
+/**
+ * A modifier à partir d'ici 
+ */
+
+
+*,*::before,*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    height: 50%;
+    background: 
+        linear-gradient(90deg,rgba(0,0,0,0.7)15.5%, rgba(5,5,5,0.96) 39.24%,rgba(22,22,22,.9)80%),
+        url('../images/Images/Thématiques/WhatsApp\ Image\ 2019-02-06\ at\ 22.20.31.jpeg') center center/ cover no-repeat;
+}
+
+section {
+    padding: 2rem 0;
+}
+a {
+    text-decoration: none;
+    color:#e5e5e5;
+    opacity: .5;
+    &:hover {
+        color: #ffffff;
+        opacity: 1;
+    }
+}
+
+a.navbar-brand {
+    color:#e5e5e5;
+    opacity: .5;
+    &:hover {
+        color: #ffffff;
+        opacity: 1;
+    }
+}
+
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    font-family: 'Shrikhand', cursive;
+    background-color: #ffffff;
+    background:linear-gradient(90deg,rgba(10,10,10,0.3)15.5%, rgba(5,5,5,0.96) 39.24%,rgba(15,15,15,.7)100%);
+    .avatar {
+        position: relative;
+        background-color:#c4c4c4;
+        text-align: center;
+        vertical-align: middle;
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: 50%;         
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            height:1.875rem;
+            width: 1.875rem;
+        }
+    }
+}
+
+.container {
+    .nav-item {
+        font-family: 'Lora', serif;
+        font-size: 1.25rem;
+        font-weight: bold
+    }
+}
+
+;
+.dropdown-menu.show {
+  position: absolute;
+    top: 110%;
+    left:-200%;  
+}
+
+
+.status_message {
+    margin-top: 1rem;
+    width: 100%;
+    height: $space_value;
+    .alert {
+        position: absolute;
+        width: 300px;
+        right: 0;
+    }
+}
+/**
+ * Trophées, Classement et score 
+ */
+
+.btn-outline-dark{
+    padding: 1.5rem 2rem;
+}
+
+.col-sm {
+    button {
+        text-align: center;
+    }
+    
+}
+
+.space_x{
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 50%;
+}
+
+
+/**
+ * Carousel thématiques suivies
+ */
+
+hr {
+    margin-top: .6rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+h5 {
+    font-family: 'Lora';
+    font-size: 2rem;
+}
+
+
+/**
+ * Propostion de themes
+ */
+
+.new_theme_request{
+    position: relative;
+    background-color: #233650;
+    color: #fff;
+    padding: 4.5rem 0;
+    &_intro {
+        display: block;
+        padding-top: 2rem;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        .request_intro {
+            font-family: 'Lora';
+            font-size: 4rem;
+        }
+    }
+    .request_link{
+        @include center_x();
+        bottom: 10%;
+    }
+}
+
+
+/**
+FOOTER
+ */
+
+footer {
+    background-color: $footer_color;
+    height: 200px;
+
+}
+.footer_about_us,.footer_contact_us{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Lora", serif;
+    padding: 0px 0.8125rem 0.8125rem;
+    border-bottom: 1px solid ;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0 0 .2rem;
+    padding: 0;
+
+    li {
+        padding: .4rem 0px;
+    }
+}
+
+h4 {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    font-family: 'Lora',sans-serif,Serif;
+    font-weight: bold;
+}

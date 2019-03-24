@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="site-content">
+        <header class="header" role="banner">
+            <div class="topbar">
+                <div class="logo">
+                    <a href="#" class="logo-link">SuperQ</a>
+                </div>
+                <nav class="navbar navbar navbar-expand-lg" id="responsive_test">
+                    <div class="navbar-items">
+                        <a href="#">Accueil</a>
+                        <a href="#apropos">A propos</a>
+                        <a href="#">Nos thématiques</a>
+                        <a href="#">Contact</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </nav>
+                <div class="authentification">
+                    <a class=" connexion btn " data-toggle="modal" role="button" data-target="#form_connection">Se connecter</a>
+                    <a class="inscription btn" data-toggle="modal" role="button" data-target="#form_inscription">S'inscrire</a>
+                </div>
+            </div>  
+        </header>
+        
+        <div class="background"></div>
+    
+        <div class="modal fade" id="form_connection" tabindex="-1" role="dialog" aria-labelledby="form_connetionCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title form_title" id="form_connectionTitle">Connexion</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">       
+                        <form action="#" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="pseudoInput" placeholder="Pseudo">
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="mdpInput" placeholder="Mot de passe">
+                            </div>
+                            <button type="submit" class="btn btn-danger connect_submit">Se connecter</button>
+                            <a href="#">Mot de passe oublié ? </a>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="new">Vous êtes nouveau </span>
+                            ?
+                        <span class="new_account">Creer votre compte</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="form_inscription" tabindex="-1" role="dialog" aria-labelledby="form_inscriptionCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content modal_inscription">
+                    <div class="modal-header">
+                        <h5 class="modal-title form_title" id="form_inscriptionTitle">Inscription</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">     
+                        <form action="#" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="psInput" placeholder="Pseudo">
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="pswInput" placeholder="Mot de passe">
+                            </div>
+                            <button type="submit" class="btn btn-danger connect_submit">S'inscrire</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="new">Vous avez déjà un compte</span>
+                            ?
+                        <a class="new_account" href="">Se connecter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="space"></div>
+    <section class="w-section w-full no-padding vc_custom_1457169846340">
+        <div class="row w-align-middle w-row-flex">
+            <div class="col col-8 no-padding">
+                <div class="col-inner">
+                    <div class="w-image text-left">
+                    <img width="900px" height="470px" src="../images/Images/Backgrounds/about_us.png" class="figure-img img-fluid rounded" alt="about_us">
+                    </div>
+                </div>
+            </div>
+            <div class="col col-4 no-padding w-box" style="left:-50px;z-index:50">
+                <div class="col-inner">
+                    <div class="w-space" style="height:100px"></div>
+                    <div class="w-heading heading-1 text-left">
+                        <h2 class="heading-title">Who We Are</h2>
+                    </div>
+                    <div class="row vc_custom_1445679936399" style="background-color:#fff">
+                        <div class="col col-12">
+                            <div class="col-inner">
+                                <div class="w-text-block">
+                                    <p>
+                                        Super Q est une application  permettant de tester son niveau de culture  générale à travers des quiz de tous niveau.
+                                    </p>
+                                </div>
+                                <div class="w-space" style="height:5px;"></div>
+                                <a class="more btn " role="button" ><span>En savoir plus</span></a>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="space"></div>
+    <section >     
+        <div class="intro">    
+            <div class="thematiques container">
+                <div class="thematiques_blue row">
+                    <div class="themes col">
+                        <span class="intro_title">10 Thématiques</span>
+                        <span class="intro_descrip">Choisissez les sujets qui vous interessent</span>
+                    </div>
+                    <div class="quiz_intro col">
+                        <span class="quiz_intro_q">Quiz</span>
+                        <span class="quiz_intro_desc"> Des quizz pour tous niveaux</span>
+                    </div>
+                    <div class="trophees_intro col">
+                        <span class="troph">Trophées</span>
+                        <span class="troph_win">Debloquer des trophées en ...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="space"></div>
+    <!---
+    <section>
+        <div class="row">
+            <div class="owl-carousel owl-loading owl-drag">
+                <div class="owl-item">
+                    <img src="../images/Images/Thématiques_mini/Art.jpg">
+                </div>
+                <div class="owl-item">
+                    <img src="../images/Images/Thématiques_mini/Art.jpg">
+                </div>
+                <div class="owl-item">
+                    <img src="../images/Images/Thématiques_mini/Art.jpg">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    -->
+    <section class="sec">
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="card owl-item" style="width: 18rem;">
+                            <img src="../images/Images/Thématiques/Cinéma.jpeg" class="card-img-top " alt="...">
+                            
+                        </div>   
+                        <div class="card owl-item" style="width: 18rem;">
+                            <img src="../images/Images/Thématiques/Géographie.jpg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card owl-item" style="width: 18rem;">
+                            <img src="../images/Images/Thématiques/Musique.jpeg" class="card-img-top " alt="...">
+                        </div>
+                        <div class="card owl-item" style="width: 18rem;">
+                            <img src="../images/Images/Thématiques/Géographie.jpg" class="card-img-top " alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../bootstrap/js/src/modal.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+<script src="../js/validator.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../owlcarousel/owl.carousel.min.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/navbar_responsive_test .js"></script>
+<script src="../bootstrap/js/src/modal.js"></script>
+</body>
+</html>

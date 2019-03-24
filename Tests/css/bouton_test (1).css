@@ -1,0 +1,16 @@
+a.bouton {
+padding: 15px 40px;
+background: #F6282D;
+color: #FFFFFF;
+font-size: 20px;
+text-decoration:none;
+float:right;
+font-family: Microsoft YaHei UI Light;
+
+}
+
+a:hover.bouton {
+background: gray;
+color: white;
+}
+

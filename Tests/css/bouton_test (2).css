@@ -1,0 +1,30 @@
+body{
+
+	position:center;
+	color: black;
+		font-size:12px;
+		margin: 0 auto;
+ 		 max-width: 50em;
+ 		 text-align:center;
+}
+
+
+
+a.bouton2 {
+padding: 10px 20px;
+background: #E76569;
+color: white;
+font-size: 20px;
+text-decoration:none;
+position:center;
+top:0px;
+float: center;
+font-family: arial;
+font-size:18px;
+border-radius:5px;
+}
+
+a:hover.bouton2 {
+background: gray;
+color: white;
+}

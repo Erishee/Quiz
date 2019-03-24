@@ -1,0 +1,40 @@
+h1 {
+	font-family: Microsoft YaHei UI Light;
+	position: relative;
+	text-align: center;
+    color: rgb(32, 20, 99);	
+    font-size: 40px;
+}
+ p{
+	 font-family: Arial, Helvetica, sans-serif;
+	 position: relative;
+	 text-align: left;
+	 left: 10%;
+	 color:rgb(236, 20, 67);
+	 font-size: 20px;
+	 font-weight: 900;
+	 font-stretch: condensed;
+ }
+
+ h5{
+	 font-family: Microsoft YaHei UI Light;
+	 color: #2a2a2b;
+     text-align: center;
+     font-size: 28px;
+	 
+	
+ }
+
+ li {
+	position: relative;
+	text-align: left;
+	font-family: Microsoft YaHei UI Light;
+	left: 10%;
+	color :black;
+	font-size: 23px;
+ }
+
+ .tro btn btn-outline-dark classement {
+	 width: 100%;
+ }
+ 

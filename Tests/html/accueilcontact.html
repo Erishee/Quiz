@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+	<link rel="stylesheet" href="boutoncontact_test.css">
+	<link rel="stylesheet" href="stylecontact_test.css">
+	<h3>Une question ? Envoyez-nous un message, nous sommes toujours l&agrave; !</h3><br><br>
+	
+	<a href="#openModal" class="boutoncontact">NOUS CONTACTER</a>
+	
+	<div id="openModal" class="modalDialog">
+		<div>
+		<a href="#close" title="Close" class="close">fermer</a>
+		<br><h1>Contactez-nous !</h1><br>
+
+		<form method="post" action="contact.php">
+		<label for="email"  ></label>
+		<input type="email" id="email" name="email" size="50" maxlength="100" placeholder="Votre adresse mail" >
+		<br>
+		<label for="objet" ></label>
+		<select id="objet" name="objet" >
+			<option value="thematiques">Th&eacutematiques</option>
+			<option value="inscriptionConnexion">Probl&egrave;me de connexion/inscription</option>
+			<option value="autre">Autre</option>
+			</select>
+			
+		<label for="message"></label>
+		<textarea type="text" id="message" name="message" style="height:200px" maxlength="1000" placeholder="Laissez votre message ici !"></textarea>
+		<br><br>
+		<a href="#" class="boutoncontact">Envoyer</a>
+
+		</form>
+		</div>
+	</div>
+	
+</body>
+
+</html>

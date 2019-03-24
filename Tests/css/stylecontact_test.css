@@ -1,0 +1,72 @@
+.modalDialog {
+	position: fixed;
+	font-family: Microsoft YaHei UI Light;
+	top: -60px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.3);
+	opacity:0;
+	-webkit-transition: opacity 200ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 500px;
+	position: center;
+	margin: 10% auto;
+	padding: 0px 60px 70px 20px;
+	background: url("https://ak1.picdn.net/shutterstock/videos/8085121/thumb/1.jpg");
+	border-radius: 7px;
+
+}
+
+.close {
+	background: white;
+	color: black;
+	line-height: 20px;
+	position: relative;
+	text-align: center;
+	float:right;
+	width: 10px;
+	text-decoration: none;
+	font-weight: none;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px #000;
+	
+	
+}
+
+.close:hover { background: #00d9ff; }
+
+input [type=text], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 6px 16px;
+  box-sizing: border-box;
+  border-radius: 0px;
+  resize:vertical;
+  
+}
+
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 6px 16px;
+  box-sizing: border-box;
+  border-radius: 0px;
+}
+
+
+
